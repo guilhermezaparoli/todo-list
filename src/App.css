@@ -1,0 +1,132 @@
+.mainContent {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 64px;
+  color: #fff;
+}
+
+.addTaskContainer {
+  max-width: 400px;
+  margin: 0 auto 32px auto;
+}
+
+.addTaskInputBox {
+  display: flex;
+}
+
+.addTaskInputBox input {
+  height: 44px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px 0 0 4px;
+  color: #fff;
+  background-color: #343d64;
+  border: 1px solid #404b7e;
+}
+
+.addTaskInputBox input.hasError {
+  border-color: #e95858;
+}
+
+.addTaskInputBox input::placeholder {
+  color: #757ca3;
+}
+
+.addTaskInputBox button {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a9d92;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.addTaskInputBox button svg {
+  fill: #fff;
+}
+
+.errorMessage {
+  color: #e95858;
+  font-size: 14px;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  color: #f9f9fb;
+  background-color: #343d64;
+}
+
+.taskList li.taskCompleted {
+  background-color: #2e3759;
+}
+
+.taskList li.taskCompleted span {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.taskList li.taskCompleted .toggleCompleteButton {
+  background-color: #ddc138;
+}
+
+.taskList li div {
+  display: flex;
+  gap: 8px;
+}
+
+.taskList li div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.taskList li div svg {
+  fill: #fff;
+}
+
+.taskList li .toggleCompleteButton {
+  background-color: #35b35b;
+}
+
+.taskList li .deleteButton {
+  background-color: #e95858;
+}
+
+.noTaskContainer {
+  border-top: 1px solid #404b7e;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.noTaskContainer svg {
+  fill: #343d64;
+  margin-bottom: 8px;
+}
+
+.noTaskContainer p {
+  color: #757ca3;
+}
